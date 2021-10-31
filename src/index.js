@@ -10,8 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <div>
     <App />
-    <TodoContainer/>
-    <MyComponent/>
+   
     </div>
   </React.StrictMode>,
   document.getElementById('root')
