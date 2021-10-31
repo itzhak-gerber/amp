@@ -25,6 +25,9 @@ function MyComponent()
 
         var url="https://y7qq3r1n63.execute-api.us-east-1.amazonaws.com/Prod/obj";
         var url1='https://api.github.com/users/hacktivist123/repos';
+        var url2="http://127.0.0.1:5000/testgetordersv"
+        var url3="http://127.0.0.1:5000/obj"
+        var url4="https://y7qq3r1n63.execute-api.us-east-1.amazonaws.com/Prod/testgetordersv"
        const apiUrl = url
        fetch(apiUrl)
          .then((response) => response.json())
