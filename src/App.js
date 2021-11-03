@@ -29,6 +29,8 @@ const App = () => {
       .then((data) =>  setRowData(data)) 
     }
 
+    
+
   //  useEffect(() => {
   
   //        fetch('https://y7qq3r1n63.execute-api.us-east-1.amazonaws.com/Prod/testgetordersv')
