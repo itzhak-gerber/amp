@@ -11,8 +11,50 @@ function Login(props) {
   const [error, setError] = useState(null);
 
   // handle button click of login form
+
+  async function postData(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      redirect: 'follow', // manual, *follow, error
+      referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+  }
+
+  
   let navigate = useNavigate();
   const handleLogin = () => {
+
+    const requestOptions = {
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ 'name': username.value,'password':password.value })
+  };
+  fetch('https://y7qq3r1n63.execute-api.us-east-1.amazonaws.com/Prod/getMytoken', requestOptions)
+     .then(response => response.json())
+      .then(data =>  
+        {
+          console.log(data);
+        }
+        );
+//}
+
+  //  // let data=" { 'name':"+"'"+username.value+"','password':'"+password.value+"'}";
+  //   let a= { 'name': username.value,'password':password.value };
+  //   postData('https://y7qq3r1n63.execute-api.us-east-1.amazonaws.com/Prod/getMytoken', a)
+  //   .then(data => {
+  //   console.log(data); // JSON data parsed by `data.json()` call
+  // });
     setUserSession("1234", username);
     navigate('/dashboard');
    // props.navigate('/dashboard');
