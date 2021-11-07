@@ -33,7 +33,9 @@ function Login(props) {
   
   let navigate = useNavigate();
   const handleLogin = () => {
-
+     let s={ 'name': username.value,'password':password.value };
+     let x=1;
+     console.log("handleLogin");
     const requestOptions = {
       method: 'POST',
       mode: 'cors',
@@ -41,6 +43,7 @@ function Login(props) {
       body: JSON.stringify({ 'name': username.value,'password':password.value })
   };
   fetch('https://y7qq3r1n63.execute-api.us-east-1.amazonaws.com/Prod/getMytoken', requestOptions)
+ 
      .then(response => response.json())
       .then(data =>  
         {
