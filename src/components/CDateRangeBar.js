@@ -8,7 +8,7 @@ function CDatesRangeBar({fetchData})
     const [fromDate, setFromDate] = useState(new Date());
     const [toDate, setToDate] = useState(new Date());
 
-    const [lastDate, setLastDate] = useState("01/01/1970");
+    const [lastDate, setLastDate] = useState("01/01/1971");
     const [lastOrder, setLastOrder] = useState("0");
 
      function setFrom(dt)
