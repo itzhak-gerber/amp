@@ -39,7 +39,7 @@ function Dashboard(props) {
  
       return(
     <div>
-      Welcome {user.value}!<br /><br />
+      Welcome {user}!<br /><br />
       <input type="button" onClick={handleLogout} value="Logout" />
       <MyGrid/>
     </div>
