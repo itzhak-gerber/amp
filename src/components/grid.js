@@ -48,8 +48,8 @@ const MyGrid = () => {
                    <AgGridColumn field="orderid" sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="total_price"  sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="email" sortable={ true } filter={ true }></AgGridColumn>
-                   <AgGridColumn field="source" sortable={ true } filter={ true }></AgGridColumn>
-                   <AgGridColumn field="tagName"  sortable={ true } filter={ true }></AgGridColumn>
+                   <AgGridColumn field="source" sortable={ true } filter={ true }  rowGroup={true} ></AgGridColumn>
+                   <AgGridColumn field="tagName"  sortable={ true } filter={ true } ></AgGridColumn>
                    <AgGridColumn field="tagValue"  sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="setName"  sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="setValue"  sortable={ true } filter={ true }></AgGridColumn>
