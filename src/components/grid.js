@@ -41,7 +41,7 @@ const MyGrid = () => {
             </tr>
             </table>
            </div>
-           <div className="ag-theme-alpine" style={{height: 1000, width: 1600}}>
+           <div className="ag-theme-alpine" style={{height: 1000, width: 1700}}>
                <AgGridReact reactUi="true" sideBar={sideBar}
                    rowData={rowData}>
                    <AgGridColumn field="dt" sortable={ true } filter={ true }></AgGridColumn>
@@ -51,8 +51,8 @@ const MyGrid = () => {
                    <AgGridColumn field="source" sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="tagName"  sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="tagValue"  sortable={ true } filter={ true }></AgGridColumn>
-                   <AgGridColumn field="setNameX"  sortable={ true } filter={ true }></AgGridColumn>
-                   <AgGridColumn field="setValueX"  sortable={ true } filter={ true }></AgGridColumn>
+                   <AgGridColumn field="setName"  sortable={ true } filter={ true }></AgGridColumn>
+                   <AgGridColumn field="setValue"  sortable={ true } filter={ true }></AgGridColumn>
                  
                </AgGridReact>
            </div>
