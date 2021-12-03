@@ -51,7 +51,7 @@ const MyGrid = () => {
                    <AgGridColumn field="source" sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="tagName"  sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="tagValue"  sortable={ true } filter={ true }></AgGridColumn>
-                   <AgGridColumn field="setName"  sortable={ true } filter={ true }></AgGridColumn>
+                   <AgGridColumn field="setNameX"  sortable={ true } filter={ true }></AgGridColumn>
                    <AgGridColumn field="setValueX"  sortable={ true } filter={ true }></AgGridColumn>
                  
                </AgGridReact>
